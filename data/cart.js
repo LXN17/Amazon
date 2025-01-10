@@ -20,7 +20,7 @@ export function addToCart(productId) {
   if (matchingItem) {
     matchingItem.quantity += 1;
   } else {
-    cart.push({ productId: productId, quantity: 1 });
+    cart.push({ productId: productId, quantity: 1, deliveryOptionId: "1" });
   }
   saveToStorage();
 }
